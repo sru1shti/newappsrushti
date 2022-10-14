@@ -24,4 +24,5 @@ spec:
         ports:
         - containerPort: 80
         resources: {}
+        imagePullPolicy: always
 status: {}
