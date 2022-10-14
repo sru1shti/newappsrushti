@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: srushti-app5
+  name: srushti-app5
+  namespace: srushti-space
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: srushti-app5
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: srushti-app5
+    spec:
+      containers:
+      - image: 01121112/srushti123-cisco-app:v1
+        name: srushti123-cisco-app
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
